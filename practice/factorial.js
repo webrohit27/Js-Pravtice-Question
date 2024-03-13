@@ -1,4 +1,4 @@
-// factorial Number
+//factorial Number
 
 function factorialSeries(n) {
     // Initialize an empty array to store the factorials
