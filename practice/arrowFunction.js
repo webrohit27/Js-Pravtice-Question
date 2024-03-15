@@ -6,5 +6,5 @@ let displayNum = num => {
 
 displayNum(27);
 
-// 
+//  
 
