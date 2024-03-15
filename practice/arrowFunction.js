@@ -6,5 +6,13 @@ let displayNum = num => {
 
 displayNum(27);
 
-//  
+// write an arrow function which takes in a number and prints the square of the number.
+
+let sqrt = (num) => {
+    console.log(num*num);
+}
+
+sqrt(27);
+
+
 
