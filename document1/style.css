@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main{
+    width: 500px;
+    height: 200px;
+    background-color: plum;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box{
+     height: 100px;
+     width:100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(194, 97, 18);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(197, 138, 11);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
