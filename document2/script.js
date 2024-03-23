@@ -7,5 +7,5 @@ let value1 = parseInt(box2.innerText);
 
 
 let sum =  (value) + (value1)
-box3.innerText = sum;  
+box3.innerText = sum; 
 
