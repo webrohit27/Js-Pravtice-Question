@@ -27,5 +27,5 @@ checkout.addEventListener("click", ()=>
    deliveryFee = 45;
    total = sum + deliveryFee + serviceCharge ;
    console.log(total);
-})
+});
 
