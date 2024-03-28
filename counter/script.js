@@ -28,24 +28,35 @@ for(let i=0; i<qty.length; i++) {
 }
 
 
+let checkout_btn =  document.getElementsByClassName("checkout-btn");
+
+function checkout(){
+    localStorage.setItem('total', total_food_price);
+    window.location.href="checkout.html";
+}
 
 
-let checkout_btn = document.getElementsByClassName("checkout-btn");
-let total_price = document.getElementById("total_price");
-let service_charge =  document.getElementById("service_charge");
-let delivery_fee = document.getElementById("delivery_fee");
-let total_amount = document.getElementById("total_amount");
-let total;
+window.onload = function() {
+    displayTotal();
+};
 
-checkout_btn[0].addEventListener("click", ()=>{
-    total_price.innerText = total_food_price;
-    service_charge.innerText = total_food_price/10;
-    delivery_fee.innerText = 45;
+  
+function displayTotal() {
 
-    total = total_food_price + (total_food_price/10) + 45;
+    let total_span = document.getElementById("total-span");
+    let service_span = document.getElementById("service-span");
+    let delivery_span = document.getElementById('delivery-span');
+    let amount_span = document.getElementById('amount-span');
 
-    total_amount.innerText = total;
-} )
+    let total = parseInt(localStorage.getItem('total'));
+    let service_charge = total/10;
+    let delivery_fee = 45;
+
+    total_span.innerText = total;
+    service_span.innerText = service_charge;
+    delivery_span.innerText = delivery_fee;
+    amount_span.innerText = total + service_charge + delivery_fee;
+}
 
 
 
