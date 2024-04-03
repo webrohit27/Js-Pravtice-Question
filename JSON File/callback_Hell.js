@@ -18,7 +18,7 @@ function getData(url, callback) {
 
 
 
-getData('todos/arijit.json', (err, data)=>{
+getData('../JSON file/todos/arijit.json'), (err, data)=>{
     console.log(data);
 
     getData('todos/atif.json', (err, data)=>{
