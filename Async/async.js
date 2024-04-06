@@ -1,6 +1,6 @@
 async function getData(){
 
-    const response = await fetch("Url");
+    const response = await fetch("todos/callback_Hell.js");
 
     const data = await response.json();
 
@@ -10,6 +10,6 @@ async function getData(){
 
 getData().then((data)=>{
     console.log(data);
-}).catch((error)=>{
-    console.log(error);
+}).catch((err)=>{
+    console.log(err);
 })
