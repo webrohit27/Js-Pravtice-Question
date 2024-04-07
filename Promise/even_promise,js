@@ -1,0 +1,6 @@
+
+function getData(){
+    new Promise((response, reject) => {
+     
+    })
+}
